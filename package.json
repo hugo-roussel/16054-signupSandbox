@@ -1,0 +1,26 @@
+{
+  "title": "Material demo",
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
+  "description": "https://github.com/mui-org/material-ui/blob/master/docs/src/pages/components/steppers/HorizontalLinearAlternativeLabelStepper.js",
+  "dependencies": {
+    "@firebase/auth": "0.11.7",
+    "@firebase/database": "0.4.11",
+    "@firebase/storage": "0.3.8",
+    "@material-ui/core": "latest",
+    "firebase": "6.3.4",
+    "promise": "8.0.3",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "keywords": [],
+  "name": "pep-signup",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,209 @@
+body {
+  margin: 1em auto;
+  max-width: 65%;
+  padding: 10%;
+}
+
+.container {
+  margin-top: 120px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.radio-group-diet {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.radio-group-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.radio-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+form {
+  padding-top: 30px;
+}
+
+/* Hover tooltips */
+.field-tip {
+  position: relative;
+}
+.field-tip .tip-content {
+  position: absolute;
+  top: -10px; /* - top padding */
+  right: 9999px;
+  width: 500px;
+  margin-right: -220px; /* width + left/right padding */
+  padding: 10px;
+  color: #333;
+  background: #8fbc8f;
+  -webkit-box-shadow: 2px 2px 5px #aaa;
+  -moz-box-shadow: 2px 2px 5px #aaa;
+  box-shadow: 2px 2px 5px #aaa;
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-out;
+  -moz-transition: opacity 250ms ease-out;
+  -ms-transition: opacity 250ms ease-out;
+  -o-transition: opacity 250ms ease-out;
+  transition: opacity 250ms ease-out;
+}
+/* <http://css-tricks.com/snippets/css/css-triangle/> */
+.field-tip .tip-content:before {
+  content: " "; /* Must have content to display */
+  position: absolute;
+  top: 50%;
+  left: -16px; /* 2 x border width */
+  width: 0;
+  height: 0;
+  margin-top: -8px; /* - border width */
+  border: 8px solid transparent;
+  border-right-color: #8fbc8f;
+}
+.field-tip:hover .tip-content {
+  right: -20px;
+  opacity: 1;
+  border-radius: 10px;
+}
+#kmlUploader {
+  border-radius: 10px;
+}
+
+#dayButtons {
+  margin: 10px 0 18px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 2px 2px 2px 0;
+}
+
+input:invalid {
+  border: 2px dashed red;
+}
+
+#spending {
+  padding: 25px;
+}
+
+$tooltip-color: rgba(0, 0, 0, 0.7);
+$tooltip-text-color: #fff;
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-trigger {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.tooltip-bubble {
+  min-width: 120px;
+  max-width: 210px;
+  position: absolute;
+  z-index: 10;
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  padding-bottom: 9px;
+  transform: translateX(-50%);
+
+  &::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid $tooltip-color;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  padding-top: 9px;
+  transform: translateX(-50%);
+
+  &::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid $tooltip-color;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tooltip-left {
+  top: 50%;
+  right: 100%;
+  padding-right: 9px;
+  transform: translateY(-50%);
+
+  &::after {
+    border-left: 9px solid $tooltip-color;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.tooltip-right {
+  top: 50%;
+  left: 100%;
+  padding-left: 9px;
+  transform: translateY(-50%);
+
+  &::after {
+    border-right: 9px solid $tooltip-color;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+}
+
+.tooltip-message {
+  background: $tooltip-color;
+  border-radius: 3px;
+  color: $tooltip-text-color;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  padding: 0.75em;
+  text-align: center;
+}
+
+.errorMsg {
+  color: red;
+}
+img {
+  height:100px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
