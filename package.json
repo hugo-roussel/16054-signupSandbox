@@ -9,7 +9,7 @@
     "@firebase/database": "0.4.11",
     "@firebase/storage": "0.3.8",
     "@material-ui/core": "latest",
-    "firebase": "6.3.4",
+    "firebase": "10.9.0",
     "promise": "8.0.3",
     "react": "latest",
     "react-dom": "latest"
